@@ -150,8 +150,8 @@ body {
     position: absolute;
     width: 49rem;
     height: 55rem;
-    left: 15rem;
-    top: 230rem;
+    left: 5%;
+    top: 215rem;
 
     background: rgba(82, 148, 185, 0.68);
     filter: blur(313px);
@@ -171,7 +171,7 @@ body {
 .for-trip__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 135.4%;
     color: #fff;
     text-transform: uppercase;
@@ -439,6 +439,12 @@ a {
 @media (min-height: 983px) {
     .header-wrapper {
         height: 982px;
+    }
+    .header-title {
+        padding-top: 30rem;
+    }
+    .header-text {
+        padding-top: 30rem;
     }
 }
 
