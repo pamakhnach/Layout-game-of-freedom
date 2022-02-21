@@ -390,6 +390,7 @@ footer {
     font-size: 36px;
     line-height: 135.4%;
     color:#fff;
+    text-transform: uppercase;
 }
 
 .link-telegram {
