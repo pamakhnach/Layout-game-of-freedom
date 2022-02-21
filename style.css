@@ -343,6 +343,7 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 135.4%;
+    text-transform: uppercase;
 }
 
 .get-trip__inner {
