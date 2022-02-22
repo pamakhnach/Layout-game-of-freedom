@@ -523,12 +523,14 @@ a {
     .header-title h1 {
         font-size: 23px;
         height: 6rem;
-        
+        width: 12rem;
+        line-height: 30px;
         margin: 0;
     }
 
     .header-title p {
         font-size: 10px;
+        line-height: 13px;
     }
 
     .header-inner {
@@ -537,7 +539,8 @@ a {
 
     .header-text {
         font-size: 15px;
-        padding-top: 10rem;
+        padding-top: 20rem;
+        line-height: 135.4%;
     }
 
     .travel {
@@ -618,7 +621,13 @@ a {
     }
 
     .blur {
-        display: none;
+        width: 14rem;
+        height: 16rem;
+        left: 30vw;
+        top: 135rem;
+
+        background: rgba(82, 148, 185, 0.68);
+        filter: blur(91.5449px);     
     }
 
     .for-trip__content {
@@ -626,11 +635,17 @@ a {
     }
 
     .for-trip__list-content {
-        margin-top: 3rem;
+        margin: 3rem 0 0 0;
+        padding-left: 0;
+        
+    }
+
+    .for-trip__text {
+        margin: 0;
     }
 
     .line {
-        width: 3rem;
+        width: 7rem;
         height: 1px;
         background-color: #fff;
         margin: 0;
@@ -785,3 +800,83 @@ a {
         margin-top: 2rem;
      }
 }
+
+@media (max-width: 351px) {
+    .header-inner {
+        max-width: 300px;
+    }
+    .header-title p {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .header-text {
+        padding-top: 20rem;
+    }
+
+    .header-text p{
+        font-size: 15px;
+        line-height: 135.4%;
+    }
+    .travel__inner {
+        max-width: 300px;
+    }
+
+    .travel__content2 {
+        transform: translateX(-7rem);
+    }
+    
+    .travel__content3 {
+        transform: translateX(1rem) translateY(5rem);
+    }
+    
+    .travel__content4 {
+        transform: translateX(-8rem) translateY(9rem);
+    }
+    
+    .travel__content1 {
+        transform: translateX(7rem);
+    }
+
+    .for-trip__wrapper {
+        max-width: 300px;
+    }
+
+    .line {
+        width: 5rem;
+    }
+
+    .for-trip__title {
+        font-size: 12px;
+    }
+
+    .wait-trip__inner {
+        max-width: 300px;
+    }
+    
+    .wait-trip__title h4{
+        font-size: 15px;
+    }
+    .wait-trip__subtitle {
+        font-size: 8px;
+    }
+
+    .circle2 {
+        transform: translateY(1rem) translateX(4rem);
+    }
+    
+    .circle3 {
+       transform: translateY(2rem) translateX(1.5rem);
+    }
+    
+    .get-trip__wrapper {
+        max-width: 300px;
+    }
+
+    .get-trip__content span {
+        font-size: 10px;
+    }
+    .get-trip__content {
+        padding: 1rem 1rem;
+    }   
+}    
