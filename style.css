@@ -354,7 +354,7 @@ body {
     
 }
 
-.get-trip__content {
+.get-trip__content1, .get-trip__content2, .get-trip__content3, .get-trip__content4, .get-trip__content5  {
     background: rgba(0, 5, 11, 0.76);
     backdrop-filter: blur(4px);
     border-radius: 24px;
@@ -364,7 +364,7 @@ body {
     align-items: center;
 }
 
-.get-trip__content span {
+.get-trip__content1 span, .get-trip__content2 span, .get-trip__content3 span, .get-trip__content4 span, .get-trip__content5 span {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -405,11 +405,15 @@ footer {
     width: 80rem;
     height: 14rem;
     background: #FFFFFF;
-    box-shadow: 4px 4px 50px 7px rgba(255, 255, 255, 0.67);
+    /* box-shadow: 4px 4px 50px 7px rgba(255, 255, 255, 0.67); */
     border-radius: 24px;
     text-align: center;
     padding-top: 2rem;
     cursor: pointer;
+}
+
+.inner-link:hover {
+    box-shadow: 4px 4px 50px 7px rgba(255, 255, 255, 0.67);
 }
 
 a span {
@@ -437,6 +441,7 @@ a {
    margin-top: 8rem;
 }
 
+
 @media (min-height: 983px) {
     .header-wrapper {
         height: 982px;
@@ -450,7 +455,7 @@ a {
 }
 
 @media (max-width: 1027px) {
-    .get-trip__content span {
+    .get-trip__content1 span, .get-trip__content2 span, .get-trip__content3 span, .get-trip__content4 span, .get-trip__content5 span {
         font-size: 18px;
     }
 }
@@ -544,9 +549,9 @@ a {
     }
 
     .travel {
-        background: url(image/image\ 20.png) no-repeat center center;
-        /* background-position: right 30% bottom 65%; */
+        background: url(image/iPhone_SE_-_9.png) no-repeat center center;
         background-size: cover;
+        height: 568px;
     }
 
     .travel__inner {
@@ -558,7 +563,7 @@ a {
     }
 
     .travel-title h2 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .travel__content {
@@ -575,7 +580,7 @@ a {
     }
     
     .travel__content4 {
-        transform: translateX(-12rem) translateY(9rem);
+        transform: translateX(-13rem) translateY(9rem);
     }
     
     .travel__content1 {
@@ -605,7 +610,7 @@ a {
     }
 
     .for-trip__title {
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
     }
 
@@ -631,7 +636,11 @@ a {
     }
 
     .for-trip__content {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .for-trip__content span {
+        margin-left: 1.5rem;
     }
 
     .for-trip__list-content {
@@ -658,7 +667,7 @@ a {
     .wait-trip {
         width: 100%;
         height: 568px;
-        background: url(image/mobile5.png) no-repeat center bottom;
+        background: url(image/iPhone_SE_-_10.png) no-repeat center bottom;
         background-size: cover;
     }
 
@@ -727,7 +736,7 @@ a {
     }
 
     .get-trip {
-        background: url(image/mobile12.png) no-repeat center center;
+        background: url(image/iPhone_SE_-_11.png) no-repeat center center;
         background-size: cover;
         height: 393px;
         
@@ -748,11 +757,11 @@ a {
         text-align: start;
     }
 
-    .get-trip__content span {
+    .get-trip__content1 span, .get-trip__content2 span, .get-trip__content3 span, .get-trip__content4 span, .get-trip__content5 span {
         font-size: 11px;
     }
 
-    .get-trip__content {
+    .get-trip__content1, .get-trip__content2, .get-trip__content3, .get-trip__content4, .get-trip__content5 {
         background: rgba(0, 5, 11, 0.76);
         backdrop-filter: blur(1.60777px);
         border-radius: 9.6466px;
@@ -760,6 +769,23 @@ a {
         margin-top: 4rem;
         display: flex;
         align-items: center;
+        width: 16rem;
+    }
+
+    .get-trip__content2 {
+        transform: translateY(2rem);
+    }
+
+    .get-trip__content3 {
+        transform: translateY(6rem);
+    }
+
+    .get-trip__content4 {
+        transform: translateY(8rem);
+    }
+
+    .get-trip__content5 {
+        transform: translateY(-12.5rem);
     }
 
     footer {
@@ -818,6 +844,11 @@ a {
         font-size: 15px;
         line-height: 135.4%;
     }
+
+    .travel {
+        background: url(image/image\ 20.png) no-repeat center center;
+        background-size: cover;
+    }
     .travel__inner {
         max-width: 300px;
     }
@@ -831,7 +862,7 @@ a {
     }
     
     .travel__content4 {
-        transform: translateX(-8rem) translateY(9rem);
+        transform: translateX(-10.5rem) translateY(9rem);
     }
     
     .travel__content1 {
@@ -846,9 +877,22 @@ a {
         width: 5rem;
     }
 
-    .for-trip__title {
-        font-size: 12px;
+    .for-trip {
+        max-width: 300px;
     }
+
+    .for-trip__title {
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .wait-trip {
+        width: 100%;
+        height: 568px;
+        background: url(image/mobile5.png) no-repeat center bottom;
+        background-size: cover;
+    }
+
 
     .wait-trip__inner {
         max-width: 300px;
@@ -868,15 +912,52 @@ a {
     .circle3 {
        transform: translateY(2rem) translateX(1.5rem);
     }
+
+    .get-trip {
+        background: url(image/mobile12.png) no-repeat center center;
+        background-size: cover;   
+    }
     
     .get-trip__wrapper {
         max-width: 300px;
     }
 
-    .get-trip__content span {
+    .get-trip__content1 span, .get-trip__content2 span, .get-trip__content3 span, .get-trip__content4 span, .get-trip__content5 span {
         font-size: 10px;
     }
-    .get-trip__content {
+
+    .get-trip__content1, .get-trip__content2, .get-trip__content3, .get-trip__content4, .get-trip__content5 {
+        background: rgba(0, 5, 11, 0.76);
+        backdrop-filter: blur(1.60777px);
+        border-radius: 9.6466px;
         padding: 1rem 1rem;
-    }   
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        width: 14rem;
+    }
+
+    .get-trip__content2 {
+        transform: translateY(2rem);
+    }
+
+    .get-trip__content3 {
+        transform: translateY(8rem);
+    }
+
+    .get-trip__content4 {
+        transform: translateY(11rem);
+    }
+
+    .get-trip__content5 {
+        transform: translateY(-10rem);
+    }
+    
+    .for-trip__content {
+        font-size: 10px;
+    }
+
+    text {
+        font-size: 8px;
+    }
 }    
