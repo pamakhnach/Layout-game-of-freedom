@@ -73,6 +73,17 @@ body {
     animation: show 4s;
 }
 
+.video {
+    height: 700px;
+}
+
+.video__frame {
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .travel {
     background: url(image/image\ 19.jpg) no-repeat center center;
     width: 100%;
