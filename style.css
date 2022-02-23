@@ -163,7 +163,7 @@ body {
     width: 49rem;
     height: 55rem;
     left: 5%;
-    top: 215rem;
+    top: 275rem;
 
     background: rgba(82, 148, 185, 0.68);
     filter: blur(313px);
@@ -621,7 +621,7 @@ a {
     }
 
     .for-trip__title {
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
     }
 
@@ -640,7 +640,7 @@ a {
         width: 14rem;
         height: 16rem;
         left: 30vw;
-        top: 135rem;
+        top: 205rem;
 
         background: rgba(82, 148, 185, 0.68);
         filter: blur(91.5449px);     
